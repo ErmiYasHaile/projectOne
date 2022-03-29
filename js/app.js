@@ -8,18 +8,18 @@ const restcountries=(choice)=> {
 })
  .then((data)=>{
      console.log(data)
-    // `${data.data[0]}`,
-    // `${data.data[0].idd}`,
-    // `${data.data[0].countrycode}`,
-    // `${data.data[0].population}`,
-    // `${data.data[0].curriencies.Eur.name}`,
-    // `${data.data[0].content[0]}`,
-    // `${data.data[0].region}`,
+    
+    $('#country_code').data(data[0].idd);
+    $('#poplulation').data(data[0].population);
+    $('#currencies').data(data[0].currencies)
+
 })
 }
 //  .catch((error)=> { 
 //      console.log(error)
 //  })
+
+// const $img = $("<img id='apod'>")
 
 $button.on("click",()=>{
     const $searchitem = $("#search").val() 
@@ -27,3 +27,11 @@ $button.on("click",()=>{
 
 })
 // restcountries($searchitem)
+
+// `${data.data[0]}`,
+//     `${data.data[0].idd}`,
+//     `${data.data[0].countrycode}`,
+//     `${data.data[0].population}`,
+//     `${data.data[0].curriencies.Eur.name}`,
+//     `${data.data[0].content[0]}`,
+//     `${data.data[0].region}`,
