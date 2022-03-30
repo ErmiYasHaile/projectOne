@@ -7,14 +7,20 @@ const restcountries=(choice)=> {
          url:`https://restcountries.com/v3.1/name/${choice}`
 })
  .then((data)=>{
-     console.log(data)
-    
-    $('#country_code').data(data[0].idd);
-    $('#poplulation').data(data[0].population);
-    $('#currencies').data(data[0].currencies)
+     console.log(data[0].population)
+    console.log(data[0].flags.png)
+     
+    $('#country_code').text(`${data[0].idd.root}`); // to get the country code
+    $('#population').text(`${data[0].population}`); // to ge the population
+    $('#currencies').text(Object.keys(data[0].currencies)[0]); // the currencie
+    $('#region').text(data[0].region); // the region
 
+    // $img.appendedTo("img-container")
+    $("img").attr("src",data[0].flags.png)
+    
 })
 }
+
 //  .catch((error)=> { 
 //      console.log(error)
 //  })
