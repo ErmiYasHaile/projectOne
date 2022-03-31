@@ -7,9 +7,9 @@ const restcountries=(choice)=> {
          url:`https://restcountries.com/v3.1/name/${choice}`
 })
  .then((data)=>{
-     console.log(data[0].population)
+     console.log(data)
     console.log(data[0].flags.png)
-     
+     $('#capital').text(data[0].capital);
     $('#country_code').text(`${data[0].idd.root}`); // to get the country code
     $('#population').text(`${data[0].population}`); // to ge the population
     $('#currencies').text(Object.keys(data[0].currencies)[0]); // the currencie
