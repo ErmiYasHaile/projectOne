@@ -23,3 +23,6 @@ $button.on("click",()=>{
     const $searchitem = $("#search").val() 
       restcountries($searchitem) 
 })
+.catch((error)=> {
+    console.log(error);
+})
