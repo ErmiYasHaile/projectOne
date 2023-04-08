@@ -21,13 +21,22 @@
 	padding: 20px;
   }
   
-  #info-container {
+  /* #info-container {
 	background-color: #fff;
 	border-radius: 8px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 	padding: 30px;
 	margin-top: 40px;
+  } */
+
+  #info-container {
+	display: none;
+	width: 300px;
+	border: 400px;
+	padding: 50px;
+	margin: auto;
   }
+  
   
   #flag-container{
 	text-align: center;
