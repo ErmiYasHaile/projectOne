@@ -1,3 +1,5 @@
+// add auutocomplete to search input
+
 
 const $button=$("button")
 const restcountries=(choice)=> {
