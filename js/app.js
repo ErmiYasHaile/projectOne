@@ -1,4 +1,4 @@
-
+// App.js
 const $button=$("button")
 const restcountries=(choice)=> {
     $.ajax( 
