@@ -1,4 +1,4 @@
-// App.js
+
 const $button=$("button")
 const restcountries=(choice)=> {
     $.ajax( 
@@ -15,6 +15,7 @@ const restcountries=(choice)=> {
     $('#region').text(data[0].region); 
     
     $("img").attr("src",data[0].flags.png)
+    $("#country-info").show();
     
 })
 }
