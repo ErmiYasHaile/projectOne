@@ -1,16 +1,9 @@
-# projectOne
-* A PRD (product Requiremnt Documnet) is rreated before creating a product or feature and includes the planning required for developers to excute effecively. This document is usually prepared by product Manager, read more [here](http://www.atlassian.com/agile/product-manager/requirements)*
-
-#Product Requiremnts Documentation
-
-**Summary**
-Field| Detail|
 
 project name- API projct one
 Descripition- use this project to get the country’s name, officila langunge, country code , flag and region. 
 Developers -Ermiyas
-Live webiste-
-Repo- git@github.com:ErmiYasHaile/projectOne.git
+[Live](https://countryspotter.netlify.app/)
+
 
 
 ## Problem Being Solved and Target marjet
